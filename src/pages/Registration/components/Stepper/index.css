@@ -1,0 +1,11 @@
+.stepper-item {
+    @apply relative flex flex-col justify-center items-center w-[338px];
+}
+
+.stepper-item:not(:first-child):before {
+    @apply content-[''] bg-[#6DA2F7] absolute w-full h-[2px] right-2/4 top-[28%] -translate-y-2/4;
+}
+
+.stepper-item .stepper-step {
+    @apply w-[100px]
+}
