@@ -120,3 +120,34 @@
     font-display: swap;
 }
 
+/* remove calendar icon for input date */
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+/* custom scrollbar of textarea */
+textarea {
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #cccccc;
+    --sb-size: 8px;
+
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+textarea::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+textarea::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+
+}

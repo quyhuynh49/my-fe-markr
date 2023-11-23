@@ -12,7 +12,7 @@ function Accordion({ className, heading, children }: AccordionProps) {
     const [isDisplayed, setIsDisplayed] = useState(true);
 
     return (
-        <div className={clsx('w-full border-b border-[#6DA2F7] px-[16px] py-[14px]', className)}>
+        <div className={clsx('w-full px-[16px] py-[14px]', className)}>
             <div className='flex justify-between'>
                 <div className='text-[#0055D4] font-sst font-[400] text-[20px]'>
                     {heading}
@@ -24,7 +24,7 @@ function Accordion({ className, heading, children }: AccordionProps) {
                     )}><ArrowUp /></button>
             </div>
             <div className={clsx('',
-                isDisplayed ? 'block' : 'hidden'
+                isDisplayed ? 'block pr-[56px]' : 'hidden'
             )}>{children}</div>
         </div>
     )

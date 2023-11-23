@@ -5,8 +5,6 @@ function SecondStep() {
   return (
     <div>
       <HeadingLine heading="Agency Information" />
-
-      SecondStep
     </div>
   )
 }

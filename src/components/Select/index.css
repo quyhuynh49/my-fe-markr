@@ -1,3 +1,22 @@
-.select-item:not(:last-child) {
-    border-bottom: 1px solid #2c2c2c;
+#custom-scrollbar-select {
+    --sb-track-color: #ccccc;
+    --sb-thumb-color: #C3DAFE;
+    --sb-size: 10px;
+
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+#custom-scrollbar-select::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+#custom-scrollbar-select::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+}
+
+#custom-scrollbar-select::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+
 }

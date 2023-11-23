@@ -9,6 +9,7 @@ module.exports = {
         sst: ['SST'],
       },
       gridTemplateRows: {
+        '7': 'repeat(7, minmax(60px, 1fr))',
         '2': 'repeat(2, minmax(60px, 1fr))',
       },
       backgroundImage: {

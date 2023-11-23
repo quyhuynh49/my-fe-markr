@@ -27,7 +27,7 @@ function Registration() {
             {/* show step ui */}
             {showStep(currentStep)}
             {/* buttons to navigate or submit or save as draft */}
-            <div className='flex justify-center gap-[16px]'>
+            <div className='flex justify-center gap-[16px] my-[32px]'>
                 {currentStep > 1 ? <Button
                     onClick={() => setCurrentStep(currentStep - 1)}
                     variant="outlined"
